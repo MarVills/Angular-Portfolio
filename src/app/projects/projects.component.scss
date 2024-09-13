@@ -1,13 +1,12 @@
-
-h2{
+h2 {
   color: rgb(22, 59, 90);
 }
 
-li.not-active{
+li.not-active {
   background-color: rgb(95, 146, 161);
 }
 
-li.active{
+li.active {
   background-color: rgb(6, 46, 58);
 }
 
@@ -21,7 +20,7 @@ li.active{
   position: relative;
 }
 
-.links{
+.links {
   opacity: 0;
   position: absolute;
   top: 30%;
@@ -29,5 +28,3 @@ li.active{
   right: 0;
   text-align: center;
 }
-
-

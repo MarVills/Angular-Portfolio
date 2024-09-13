@@ -7,7 +7,7 @@ import { locale as french } from '../shared/i18n/fr';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
   mapMarker: any;
@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
   birthday: any;
   badge: any;
   home: any;
-  
+
   constructor(private _translationLoaderService: TranslationLoaderService) {
     this._translationLoaderService.loadTranslations(english, french);
   }
@@ -31,5 +31,4 @@ export class AboutComponent implements OnInit {
     this.badge = awesom.faGraduationCap;
     this.home = awesom.faLaptopHouse;
   }
-
 }

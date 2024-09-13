@@ -7,16 +7,12 @@ import { locale as french } from '../shared/i18n/fr';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
-
   constructor(private _translationLoaderService: TranslationLoaderService) {
     this._translationLoaderService.loadTranslations(english, french);
-  
   }
 
-  ngOnInit(): void {
-   
-  }
+  ngOnInit(): void {}
 }
